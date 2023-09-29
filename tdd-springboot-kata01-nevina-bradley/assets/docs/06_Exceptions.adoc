@@ -1,0 +1,55 @@
+= Spring Boot - Custom Exceptions
+:toc:
+:toclevels: 4
+
+Creating custom exceptions to handle business condition failures.
+
+== The Exceptions
+
+The samples for this chapter cater to business conditions such as invalid id, invalid assignee,
+invalid length of assignee parameter, and a todo not found use case, common in ``GET``s, ``PUT``s
+and ``DELETE``s.
+
+```
+src
+└── main
+    └── java
+        └── com
+            └── codedifferently
+                └── phonebook
+                    └── widgets
+                        └── exceptions
+                            └── WidgetException.java
+
+```
+
+'''
+
+== Exercise Lab
+
+image:../../assets/images/labtime.png[Lab, align="center"]
+
+. Create the lab exception(s):
+.. `PersonException` - when searching for a non-existing account.
+
+```
+src
+└── main
+    └── java
+        └── com
+            └── codedifferently
+                └── phonebook
+                    └── people
+                        └── exceptions
+                            └── PersonException.java
+
+```
+
+[width=100%, cols="<10%,^80%,>10%",grid=none,frame=ends]
+|===
+| Prev | TOC | Next
+
+| link:05_DAOLayer.adoc[Working with the Persistence Layer]
+| link:TableOfContents.adoc[TOC]
+| link:07_ServiceLayer.adoc[Working with the Service Layer]
+|===
